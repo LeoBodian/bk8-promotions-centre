@@ -858,3 +858,420 @@ img[loading="lazy"][src] {
 .contextual-link:hover {
   text-decoration: underline;
 }
+
+/* ================================
+   Daily Promotions Page Styles
+   ================================ */
+
+/* Main Content */
+.main-content {
+  padding: 32px 0;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.main-content .intro {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+
+.main-content section {
+  margin-bottom: 48px;
+}
+
+.main-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: var(--accent);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.main-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--white);
+}
+
+.main-content h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: var(--accent);
+}
+
+.main-content p {
+  color: var(--text-light);
+  margin-bottom: 12px;
+}
+
+.main-content ul, .main-content ol {
+  color: var(--text-light);
+  padding-left: 24px;
+  margin-bottom: 16px;
+}
+
+.main-content li {
+  margin-bottom: 8px;
+}
+
+.main-content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+/* Day Grid - Weekly Schedule */
+.day-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.day-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--primary-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.day-card.special {
+  border: 2px solid var(--accent);
+  background: linear-gradient(135deg, var(--primary-warm) 0%, var(--primary-light) 100%);
+}
+
+.day-card h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.day-card h4 {
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+
+.day-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.day-card .code {
+  background: var(--primary);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.day-card .code strong {
+  color: var(--accent);
+}
+
+/* Promo Tables */
+.promo-table,
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.promo-table th,
+.main-content table th {
+  background: var(--primary-warm);
+  color: var(--accent);
+  padding: 14px 16px;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.promo-table td,
+.main-content table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-light);
+}
+
+.promo-table tr:last-child td,
+.main-content table tr:last-child td {
+  border-bottom: none;
+}
+
+.promo-table tr:hover td,
+.main-content table tr:hover td {
+  background: var(--primary-light);
+}
+
+/* Cashback Grid */
+.cashback-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.cashback-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--primary-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.cashback-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--accent-glow);
+  border-color: var(--accent);
+}
+
+.cashback-card.vip {
+  border: 2px solid var(--bronze);
+  background: linear-gradient(135deg, var(--primary-warm) 0%, #2a1f0a 100%);
+}
+
+.cashback-card h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.cashback-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-bottom: 6px;
+}
+
+/* Event Cards */
+.event-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--primary-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.event-card:hover {
+  border-color: var(--accent);
+}
+
+.event-card h3 {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.event-card ul {
+  margin: 12px 0;
+}
+
+/* Lucky 88 Special Box */
+.lucky88-box {
+  background: linear-gradient(135deg, var(--primary-warm) 0%, var(--primary-light) 100%);
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px var(--accent-glow);
+}
+
+.lucky88-box h3 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.lucky88-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.lucky88-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lucky88-box li::before {
+  content: '🍀';
+}
+
+.lucky88-box li:last-child {
+  border-bottom: none;
+}
+
+.lucky88-box .code {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 16px;
+}
+
+.lucky88-box .code strong {
+  background: var(--bonus-gradient);
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+/* How to Claim - Ordered List */
+.how-to-claim ol {
+  list-style: none;
+  padding: 0;
+  counter-reset: step-counter;
+}
+
+.how-to-claim li {
+  counter-increment: step-counter;
+  padding: 16px 16px 16px 60px;
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.how-to-claim li::before {
+  content: counter(step-counter);
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  background: var(--bonus-gradient);
+  color: var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Related Grid */
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.related-card {
+  display: block;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--primary-light) 100%);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.related-card:hover {
+  border-color: var(--accent);
+  background: var(--primary-warm);
+  color: var(--accent);
+  transform: translateX(4px);
+  text-decoration: none;
+}
+
+/* Terms Section */
+.terms ul {
+  list-style: none;
+  padding: 0;
+}
+
+.terms li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-light);
+}
+
+.terms li:last-child {
+  border-bottom: none;
+}
+
+.terms li::before {
+  content: '•';
+  position: absolute;
+  left: 8px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* Responsive - Tablet */
+@media (min-width: 768px) {
+  .day-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cashback-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-content h1 {
+    font-size: 2.25rem;
+  }
+}
+
+/* Responsive - Desktop */
+@media (min-width: 1024px) {
+  .day-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .day-grid .day-card:nth-child(6),
+  .day-grid .day-card:nth-child(7) {
+    grid-column: span 1;
+  }
+
+  .cashback-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-content h1 {
+    font-size: 2.5rem;
+  }
+}
