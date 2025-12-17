@@ -1,0 +1,9 @@
+# robots.txt for BK8KH88 Promotions Centre
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bk8-promotions-centre.pages.dev/sitemap.xml
+
+# Crawl-delay (optional, be nice to servers)
+Crawl-delay: 1
