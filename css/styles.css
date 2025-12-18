@@ -726,7 +726,7 @@ body {
 }
 
 .footer-section a {
-  color: var(--text-light);
+  color: #ddd;
   text-decoration: none;
   font-size: 0.875rem;
   transition: color 0.3s ease;
@@ -740,8 +740,12 @@ body {
   border-top: 1px solid var(--border);
   padding-top: 20px;
   text-align: center;
-  color: var(--text-light);
+  color: #ddd;
   font-size: 0.875rem;
+}
+
+.footer-bottom a {
+  color: var(--accent);
 }
 
 .footer-disclaimer {
