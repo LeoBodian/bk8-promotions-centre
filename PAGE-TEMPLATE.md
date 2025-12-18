@@ -11,7 +11,7 @@ All pages must use this consistent navigation structure:
   <div class="container">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="images/logo.webp" alt="BK8-88" class="logo-img" width="32" height="32">
+        <img src="images/logo-34.webp" alt="BK8-88" class="logo-img" width="34" height="34">
         <span>Lucky 88</span>
       </a>
       <button class="nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
